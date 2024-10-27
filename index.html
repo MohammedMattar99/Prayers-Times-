@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prayers.css">
+    <title>Prayers Times</title>
+</head>
+<body>
+
+    <div class="container"> 
+        <div id="prayerTime" class="prayerTime">
+            مواقيت الصلاة
+        </div>
+
+        <div id="city" class="city">غزة</div>
+
+        <div id="dat" class="time">---</div>
+        <!-- <div id="dat"> </div> -->
+         
+
+        <hr>
+        <div id="timeContainer" class="timeContainer">
+            <div id="Fajr" class="timeBody"><h1>الفجر</h1></div>
+            <div id="Dhuhr" class="timeBody"><h1>الظهر</h1></div>
+            <div id="Asr" class="timeBody"><h1>العصر</h1></div>
+            <div id="Maghrib" class="timeBody"><h1>المغرب</h1></div>
+            <div id="Isha" class="timeBody"><h1>العشاء</h1></div>
+        </div>
+
+
+        <select id="select" onchange="changeCity()">
+            <option value="فلسطين">فلسطين</option>
+            <option value="مصر">مصر</option>
+            <option value="السعودية">السعودية</option>
+            <option value="الأردن">الأردن</option>
+        </select>
+    </div>
+    
+</body>
+<script src="prayer.js"></script>
+
+</html>
